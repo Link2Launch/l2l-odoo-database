@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="snippets" inherit_id="website.snippets" name="L2L Snippets">
+        <!-- Add the custom snippet to the group -->
+        <xpath expr="//snippets[@id='snippet_content']/*[1]" position="before">
+            <t t-snippet="l2l_website_custom_snippets.s_l2l_custom_carousel"
+                string="L2L Custom Carousel"
+                t-thumbnail="/l2l_website_custom_snippets/static/src/images/snippets/carousel.png" />
+        </xpath>
+    </template>
+</odoo>

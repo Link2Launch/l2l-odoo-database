@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_l2l_custom_carousel" name="Custom Carousel">
+        <section>
+            <link rel="stylesheet" type="text/css"
+                href="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/000.css" />
+            <link rel="stylesheet" type="text/css"
+                href="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/owl-theme/owl.carousel.min.css" />
+            <link rel="stylesheet" type="text/css"
+                href="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/owl-theme/owl.theme.default.min.css" />
+            <link rel="stylesheet" type="text/css"
+                href="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/owl-theme/owl.theme.green.min.css" />
+
+            
+            <div class="section-body">
+                <section class="section-title">
+                    <h1>Section Title</h1>
+                    <p>Section descriptive text</p>
+                </section>
+                <div class="carousel-container">
+                    <div class="carousel-btn-left" contentEditable="False">
+                        <img src="/l2l_website_custom_snippets/static/src/images/snippets/arrow-left.svg" />
+                    </div>
+                    <div class="carousel-btn-right" contentEditable="False">
+                        <img
+                            src="/l2l_website_custom_snippets/static/src/images/snippets/arrow-right.svg" />
+                    </div>
+                    <div class="owl-carousel owl-theme s_allow_columns"
+                        style="--grid-item-padding-x: 15px;">
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                            <div class="carousel-card-body">
+                                <h5 class="carousel-card-title">Quality and Excellence</h5>
+                                <p class="carousel-card-text">We provide personalized solutions to meet your
+                                    unique
+                                    needs. Our team works with you to ensure optimal results from start to
+                                    finish.</p>
+                                <a class="btn btn-primary o_snippet_drop_in_only" href="#">Button</a>
+                            </div>
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                            <div class="carousel-card-body">
+                                <h5 class="carousel-card-title">Quality and Excellence</h5>
+                                <p class="carousel-card-text">We provide personalized solutions to meet your
+                                    unique
+                                    needs. Our team works with you to ensure optimal results from start to
+                                    finish.</p>
+                                <a class="btn btn-primary o_snippet_drop_in_only" href="#">Button</a>
+                            </div>
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                            <div class="carousel-card-body">
+                                <h5 class="carousel-card-title">Quality and Excellence</h5>
+                                <p class="carousel-card-text">We provide personalized solutions to meet your
+                                    unique
+                                    needs. Our team works with you to ensure optimal results from start to
+                                    finish.</p>
+                                <a class="btn btn-primary o_snippet_drop_in_only" href="#">Button</a>
+                            </div>
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                            <div class="carousel-card-body">
+                                <h5 class="carousel-card-title">Quality and Excellence</h5>
+                                <p class="carousel-card-text">We provide personalized solutions to meet your
+                                    unique
+                                    needs. Our team works with you to ensure optimal results from start to
+                                    finish.</p>
+                                <a class="btn btn-primary o_snippet_drop_in_only" href="#">Button</a>
+                            </div>
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                            <div class="carousel-card-body">
+                                <h5 class="carousel-card-title">Quality and Excellence</h5>
+                                <p class="carousel-card-text">We provide personalized solutions to meet your
+                                    unique
+                                    needs. Our team works with you to ensure optimal results from start to
+                                    finish.</p>
+                                <a class="btn btn-primary o_snippet_drop_in_only" href="#">Button</a>
+                            </div>
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                            <div class="carousel-card-body">
+                                <h5 class="carousel-card-title">Quality and Excellence</h5>
+                                <p class="carousel-card-text">We provide personalized solutions to meet your
+                                    unique
+                                    needs. Our team works with you to ensure optimal results from start to
+                                    finish.</p>
+                                <a class="btn btn-primary o_snippet_drop_in_only" href="#">Button</a>
+                            </div>
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                            <div class="carousel-card-body">
+                                <h5 class="carousel-card-title">Quality and Excellence</h5>
+                                <p class="carousel-card-text">We provide personalized solutions to meet your
+                                    unique
+                                    needs. Our team works with you to ensure optimal results from start to
+                                    finish.</p>
+                                <a class="btn btn-primary o_snippet_drop_in_only" href="#">Button</a>
+                            </div>
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                            <div class="carousel-card-body">
+                                <h5 class="carousel-card-title">Quality and Excellence</h5>
+                                <p class="carousel-card-text">We provide personalized solutions to meet your
+                                    unique
+                                    needs. Our team works with you to ensure optimal results from start to
+                                    finish.</p>
+                                <a class="btn btn-primary o_snippet_drop_in_only" href="#">Button</a>
+                            </div>
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                            <div class="carousel-card-body">
+                                <h5 class="carousel-card-title">Quality and Excellence</h5>
+                                <p class="carousel-card-text">We provide personalized solutions to meet your
+                                    unique
+                                    needs. Our team works with you to ensure optimal results from start to
+                                    finish.</p>
+                                <a class="btn btn-primary o_snippet_drop_in_only" href="#">Button</a>
+                            </div>
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                            <div class="carousel-card-body">
+                                <h5 class="carousel-card-title">Quality and Excellence</h5>
+                                <p class="carousel-card-text">We provide personalized solutions to meet your
+                                    unique
+                                    needs. Our team works with you to ensure optimal results from start to
+                                    finish.</p>
+                                <a class="btn btn-primary o_snippet_drop_in_only" href="#">Button</a>
+                            </div>
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                            <div class="carousel-card-body">
+                                <h5 class="carousel-card-title">Quality and Excellence</h5>
+                                <p class="carousel-card-text">We provide personalized solutions to meet your
+                                    unique
+                                    needs. Our team works with you to ensure optimal results from start to
+                                    finish.</p>
+                                <a class="btn btn-primary o_snippet_drop_in_only" href="#">Button</a>
+                            </div>
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                            <div class="carousel-card-body">
+                                <h5 class="carousel-card-title">Quality and Excellence</h5>
+                                <p class="carousel-card-text">We provide personalized solutions to meet your
+                                    unique
+                                    needs. Our team works with you to ensure optimal results from start to
+                                    finish.</p>
+                                <a class="btn btn-primary o_snippet_drop_in_only" href="#">Button</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script
+                src="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/owl-theme/owl.carousel.min.js"></script>
+            <script src="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/000.js"></script>
+        
+        </section>
+    </template>
+</odoo>

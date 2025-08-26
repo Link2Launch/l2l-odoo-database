@@ -1,0 +1,164 @@
+.section-body {
+    /* body consists of two sections side by side horizontally 
+    1. title box - takes up 20% of the body
+    2. carousel container - takes up 80% of the body 
+    */
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 20px;
+
+    border-radius: 20px;
+    border-width: 2px;
+    box-shadow: -8px 12px 24px rgba(0, 0, 0, 0.4);
+    border-style: solid;
+    border-color: grey;
+}
+
+
+.carousel-container {
+    display: flex;
+    width: 70%;
+    margin: 20px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.carousel-btn-left {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 15px;
+}
+
+.carousel-btn-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 15px;
+}
+
+
+.item {
+    min-height: 300px;
+    width: 400px;
+
+    justify-content: center;
+
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+}
+
+.carousel-card-image {
+    width: 100% !important;
+    height: 20%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-card-body {
+    margin: 10px;
+}
+
+.carousel-card-title {
+
+}
+
+.carousel-card-text {
+    margin-bottom: 20px;
+
+}
+
+.carousel-card-button {
+
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.owl-dots:last-child {
+    display: block;
+}
+
+
+
+@media (max-width: 900px) {
+    .section-body {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .section-title {
+        width: 100%;
+        height: auto;
+        margin: 5%;
+        margin-bottom: 20px;
+        box-shadow: none;
+        border-radius: 10px;
+    }
+
+    .carousel-container {
+        width: 100%;
+        margin: 5%;
+    }
+
+    .carousel-btn-left {
+        left: 0;
+        top: unset;
+        bottom: 0;
+    }
+    
+    .carousel-btn-right {
+        top: unset;
+        bottom: 0;
+    }
+
+    .item {
+        min-height: 300px;
+        width: 70vw;
+    }
+
+}
