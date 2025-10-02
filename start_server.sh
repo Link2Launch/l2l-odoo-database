@@ -1,0 +1,1 @@
+./odoo-bin -d link2launch --addons-path=custom_addons/web,addons
