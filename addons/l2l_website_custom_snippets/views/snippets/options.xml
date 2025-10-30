@@ -6,6 +6,9 @@
             <t t-snippet="l2l_website_custom_snippets.s_l2l_custom_carousel"
                 string="L2L Custom Carousel"
                 t-thumbnail="/l2l_website_custom_snippets/static/src/images/snippets/carousel.png" />
+            <t t-snippet="l2l_website_custom_snippets.s_l2l_image_gallery"
+                string="L2L Image Gallery"
+                t-thumbnail="/l2l_website_custom_snippets/static/src/images/snippets/carousel.png" />
         </xpath>
     </template>
 </odoo>

@@ -13,6 +13,7 @@
     'data': [
         'views/snippets/options.xml',
         'views/snippets/s_l2l_custom_carousel.xml',
+        'views/snippets/s_l2l_image_gallery.xml',
     ],
     "assets": {
         "web.assets_frontend": [

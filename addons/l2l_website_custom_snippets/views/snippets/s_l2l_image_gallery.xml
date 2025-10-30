@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_l2l_image_gallery" name="Custom Carousel">
+        <section>
+            <link rel="stylesheet" type="text/css"
+                href="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/001.css" />
+            <link rel="stylesheet" type="text/css"
+                href="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/owl-theme/owl.carousel.min.css" />
+            <link rel="stylesheet" type="text/css"
+                href="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/owl-theme/owl.theme.default.min.css" />
+            <link rel="stylesheet" type="text/css"
+                href="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/owl-theme/owl.theme.green.min.css" />
+
+
+            <div class="section-body">
+                <div class="carousel-container">
+                    <div class="carousel-btn-left" contentEditable="False">
+                        <img
+                            src="/l2l_website_custom_snippets/static/src/images/snippets/arrow-left.svg" />
+                    </div>
+                    <div class="carousel-btn-right" contentEditable="False">
+                        <img
+                            src="/l2l_website_custom_snippets/static/src/images/snippets/arrow-right.svg" />
+                    </div>
+                    <div class="owl-carousel owl-theme s_allow_columns"
+                        style="--grid-item-padding-x: 15px;">
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                        </section>
+                        <section class="item">
+                            <img class="carousel-card-image"
+                                src="/web/image/website.s_key_images_default_image_1" alt="" />
+                        </section>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-fullscreen">
+                <img class="inner-screen"/>
+
+                <div class="exit-button">
+                    <a id="image-fullscreen-exit">✖</a>
+                </div>
+
+                <div id="grey-area"></div>
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script
+                src="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/owl-theme/owl.carousel.min.js"></script>
+            <script
+                src="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/000.js"></script>
+            <script
+                src="l2l_website_custom_snippets/static/src/snippets/s_l2l_custom_carousel/gallery-script.js"></script>
+
+        </section>
+    </template>
+</odoo>
