@@ -1,1 +1,1 @@
-./odoo-bin -d d6r43907kqjbcq --addons-path=custom_addons/web,addons
+./odoo-bin -d d6r43907kqjbcq -r ub7362fsiabrn8 -w pab565bdd6622bcd965f16dc1601882df8a9f417456101606ca73f5cbf2ddabea --db_host c5cqb8h0eop3g3.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com --addons-path=custom_addons/web,addons
