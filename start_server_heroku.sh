@@ -1,0 +1,1 @@
+./odoo-bin --config 'heroku-odoo.conf' --http-port $PORT
