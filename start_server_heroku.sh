@@ -1,1 +1,1 @@
-./odoo-bin --config 'heroku-odoo.conf' --database=d6r43907kqjbcq
+./odoo-bin --config 'heroku-odoo.conf'
