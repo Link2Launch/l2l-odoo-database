@@ -1,1 +1,1 @@
-./odoo-bin -d d6r43907kqjbcq --addons-path=custom_addons/web,addons
+./odoo-bin -d d6r43907kqjbcq --addons-path=addonscustom_addons/web,addons
