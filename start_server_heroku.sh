@@ -1,1 +1,1 @@
-./odoo-bin --config 'heroku-odoo.conf' --http-port $PORT --data-dir '/filestore/link2launch'
+./odoo-bin --config 'heroku-odoo.conf' --http-port $PORT
