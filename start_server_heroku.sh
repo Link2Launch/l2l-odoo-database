@@ -1,1 +1,1 @@
-./odoo-bin --config 'heroku-odoo.conf' --http-port $PORT -u fs_attachment_s3
+./odoo-bin --config 'heroku-odoo.conf' --http-port $PORT
