@@ -97,9 +97,6 @@ zeep==4.1.0 ; python_version < '3.11'  # (jammy)
 zeep==4.2.1 ; python_version >= '3.11' and python_version < '3.13'
 zeep==4.3.1 ; python_version >= '3.13'
 
-packaging
-fsspec
-python_slugify
 boto3
 
 # odooku-odoo-addons>=11.0.0
