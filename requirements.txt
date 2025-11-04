@@ -102,7 +102,6 @@ fsspec
 fsspec[s3]
 fsspec[sftp]
 python_slugify
-boto3
 s3fs
 
 # odooku-odoo-addons>=11.0.0
