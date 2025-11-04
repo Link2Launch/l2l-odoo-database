@@ -101,6 +101,7 @@ packaging
 fsspec
 fsspec[s3]
 fsspec[sftp]
+python_slugify
 
 # odooku-odoo-addons>=11.0.0
 # odooku>=11.0.0
