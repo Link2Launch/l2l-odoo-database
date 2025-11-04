@@ -100,6 +100,7 @@ zeep==4.3.1 ; python_version >= '3.13'
 packaging
 fsspec
 fsspec[s3]
+fsspec[sftp]
 python_slugify
 boto3
 cachetools
