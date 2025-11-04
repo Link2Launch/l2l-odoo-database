@@ -1,1 +1,1 @@
-./odoo-bin --config 'heroku-odoo.conf' --http-port $PORT -d sftp://0b37c5c179bb36a71a67cc909e56e0:AkgILLNS8RlWtce79etxBJNMhdRO93@sparkling-water-50295.sftptogo.com:22/
+./odoo-bin --config 'heroku-odoo.conf' --http-port $PORT -d link2launch -D sftp://0b37c5c179bb36a71a67cc909e56e0:AkgILLNS8RlWtce79etxBJNMhdRO93@sparkling-water-50295.sftptogo.com:22/
