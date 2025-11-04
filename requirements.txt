@@ -101,6 +101,7 @@ packaging
 fsspec
 python_slugify
 boto3
+cachetools
 
 # odooku-odoo-addons>=11.0.0
 # odooku>=11.0.0
