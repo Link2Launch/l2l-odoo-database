@@ -1,1 +1,1 @@
-./odoo-bin -d link2launch --addons-path=custom_addons/web,addons,custom_addons/storage,custom_addons/server-env
+./odoo-bin --config 'heroku-odoo.conf' --http-port $PORT -d link2launch
