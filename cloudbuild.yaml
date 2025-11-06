@@ -1,0 +1,17 @@
+steps:
+  # Install dependencies
+  - name: 'python:3.11'
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        pip install -r requirements.txt
+
+  # Run the Procfile command for web
+  - name: 'python:3.11'
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        echo "Starting web process..."
+        chmod u+x start_server_heroku.sh && ./start_server_heroku.sh
