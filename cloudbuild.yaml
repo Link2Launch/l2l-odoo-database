@@ -5,23 +5,8 @@ steps:
       [
         'build',
         'gcr.io/$PROJECT_ID/odoo',
-        '--builder=gcr.io/buildpacks/builder:v1',
+        '--env', 'GOOGLE_RUNTIME=python',
         '--env', 'GOOGLE_ENTRYPOINT=chmod u+x start_server_heroku.sh && ./start_server_heroku.sh'
-      ]
-
-  # Step 2: Deploy to Cloud Run (persistent hosting)
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    entrypoint: gcloud
-    args:
-      [
-        'run', 'deploy', 'odoo',
-        '--image', 'gcr.io/$PROJECT_ID/odoo',
-        '--platform', 'managed',
-        '--region', 'us-central1',
-        '--allow-unauthenticated',
-        '--port', '8069',
-        '--set-env-vars',
-        'DB_HOST=your-db-host,DB_USER=odoo,DB_PASSWORD=odoo,DB_NAME=postgres'
       ]
 
 images:
