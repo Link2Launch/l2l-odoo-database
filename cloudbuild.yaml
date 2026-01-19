@@ -1,6 +1,6 @@
 steps:
   # Step 1: Build the image using Google Buildpacks (no Dockerfile)
-  - name: 'gcr.io/buildpacks/builder'
+  - name: 'gcr.io/k8s-skaffold/pack'
     args:
       [
         'build',
@@ -11,3 +11,5 @@ steps:
 
 images:
   - 'gcr.io/$PROJECT_ID/odoo'
+options:
+  logging: CLOUD_LOGGING_ONLY
