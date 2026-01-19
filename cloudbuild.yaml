@@ -1,6 +1,6 @@
 steps:
   # Step 1: Build the image using Google Buildpacks (no Dockerfile)
-  - name: 'gcr.io/k8s-skaffold/pack'
+  - name: 'gcr.io/buildpacks/builder:v1'
     args:
       [
         'build',
