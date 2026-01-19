@@ -1,15 +1,58 @@
-steps:
-  # Step 1: Build the image using Google Buildpacks (no Dockerfile)
-  - name: 'gcr.io/buildpacks/builder:v1'
-    args:
-      [
-        'build',
-        'gcr.io/$PROJECT_ID/odoo',
-        '--env', 'GOOGLE_RUNTIME=python',
-        '--env', 'GOOGLE_ENTRYPOINT=chmod u+x start_server_heroku.sh && ./start_server_heroku.sh'
-      ]
+# steps:
+#   # Step 1: Build the image using Google Buildpacks (no Dockerfile)
+#   - name: 'gcr.io/buildpacks/builder:v1'
+#     args:
+#       [
+#         'build',
+#         'gcr.io/$PROJECT_ID/odoo',
+#         '--env', 'GOOGLE_RUNTIME=python',
+#         '--env', 'GOOGLE_ENTRYPOINT=chmod u+x start_server_heroku.sh && ./start_server_heroku.sh'
+#       ]
 
-images:
-  - 'gcr.io/$PROJECT_ID/odoo'
+# images:
+#   - 'gcr.io/$PROJECT_ID/odoo'
+# options:
+#   logging: CLOUD_LOGGING_ONLY
+
+steps:
+  # 1. Use a standard Python builder
+  - name: 'python:3.10'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        set -e
+
+        echo "Installing system dependencies..."
+        apt-get update
+        apt-get install -y \
+          build-essential \
+          libpq-dev \
+          libsasl2-dev \
+          libldap2-dev \
+          libssl-dev \
+          nodejs \
+          npm
+
+        echo "Installing Python dependencies..."
+        pip install --upgrade pip
+        pip install -r requirements.txt
+
+        echo "Installing wkhtmltopdf (if needed)..."
+        apt-get install -y wkhtmltopdf || true
+
+        echo "Running Odoo database update..."
+        python odoo-bin \
+          -c odoo.conf \
+          -d ${ODOO_DB_NAME} \
+          -u ${ODOO_UPDATE_MODULES} \
+          --stop-after-init
+
 options:
   logging: CLOUD_LOGGING_ONLY
+
+substitutions:
+  _ODOO_DB_NAME: my_odoo_db
+  _ODOO_UPDATE_MODULES: base
+
+timeout: 1800s
