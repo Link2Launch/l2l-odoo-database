@@ -42,17 +42,16 @@ steps:
         apt-get install -y wkhtmltopdf || true
 
         echo "Running Odoo database update..."
-        python odoo-bin \
-          -c odoo.conf \
-          -d ${ODOO_DB_NAME} \
-          -u ${ODOO_UPDATE_MODULES} \
-          --stop-after-init
+        
 
 options:
   logging: CLOUD_LOGGING_ONLY
 
-substitutions:
-  _ODOO_DB_NAME: my_odoo_db
-  _ODOO_UPDATE_MODULES: base
-
 timeout: 1800s
+
+
+# python odoo-bin \
+#           -c odoo.conf \
+#           -d ${ODOO_DB_NAME} \
+#           -u ${ODOO_UPDATE_MODULES} \
+#           --stop-after-init
